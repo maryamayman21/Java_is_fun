@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Exercise {
+
+	static Scanner reader=new Scanner(System.in);
+	public static void main(String[] args){
+		System.out.print("enter number:");
+		 double Number=reader.nextDouble();
+	 int extractedDigits = (int) (Number * Math.pow(10, 1)) % 10;
+	     if(extractedDigits < 5)
+	     System.out.println((int)Number);
+	     else System.out.println((int)Number+1);
+	
+	}
+}
